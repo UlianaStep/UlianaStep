@@ -41,10 +41,10 @@ $(document).ready(() => {
         nextArrow: document.getElementById("arrow__right"),
         responsive:[
             {
-                breakpoint:1200,
+                breakpoint:1300,
                 settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 2,
+                  slidesToScroll: 1,
                   infinite: true,
                   dots: true
             }
@@ -52,15 +52,20 @@ $(document).ready(() => {
         ]
     })
 })
-const contact = document.getElementById("contact")
-const confirm = document.getElementById("confirm")
 
-// Событие клика для появления модального окна после нажатия на кнопку
-contact.addEventListener('click', (e) => {
-    e.preventDefault()
-    confirm.classList.remove('hide')
-    setTimeout(() => {
-        confirm.classList.add('hide')
-    }, 2000)
-})
+
+
+// окно
+
+var okno = document.getElementById('okno');
+var clickcontact = document.getElementById('contact');
+var closeokno = document.querySelector('.krestik');
+
+    function onClickContact() {
+        okno.style.cssText = "display: flex;";
+    }
+
+    function onClickKrestik() {
+        okno.style.cssText = "display: none;";
+    }
 

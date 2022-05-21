@@ -1,309 +1,262 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Подключение локального css для переключателя -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/css/uikit.min.css" />
-        <!-- Подключение локального css для слайдера -->
-        <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-        <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-        <!-- Подключение Jquery jQuery — это JavaScript Framework-->
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-        <title>UlianaStep-DESIGN</title>
-        <!-- Подключение шрифтов-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-      </head>
-
-      <!-- Навигация -->
-      <nav class = 'nav'>
-          <div class = 'container__nav'>
-            <img class = 'nav__logo' src="img/лого.svg">
-            <a class = 'nav__text'>ABOUT</a>
-            <a class = 'nav__text'>SERVICES</a>
-            <a class = 'nav__text'>PORTFOLIO</a>
-            <a class = 'nav__text'>CONTACT</a>
-          </div>
-          <!-- Это кнопка бургер-меню -->
-            <div class="nav__menu" onclick="onClickMenu(this)" >
-                <img class = 'burger' src="img/Vector.svg"> 
-            </div>
-
-      </nav>
-
-      
-
-
-  <!-- Всплывающие ссылки при нажатии бургер-меню -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UlianaStep-DESIGN</title>
+    <!-- Подключение локального css для переключателя -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/css/uikit.min.css" />
+    <!-- Подключение локального css для слайдера -->        <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <!-- Подключение шрифтов-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/okno.css">
+  </head>
+  <body>
+  <!-- Навигация -->
+  <nav class='nav'>
+    <div class='container__nav'>
+      <img class='nav__logo' src="img/лого.svg">
+      <a href="#section_second" class='nav__text'>ABOUT</a>
+      <a href="#section_fourth" class='nav__text'>SERVICES</a>
+      <a href="#section_fourth" class='nav__text'>PORTFOLIO</a>
+      <a href="#section_fifth" class='nav__text'>CONTACT</a>
+    </div>
+    <!-- Это кнопка бургер-меню -->
+    <div class="nav__menu" onclick="onClickMenu(this)" >
+      <img class = 'burger' src="img/Vector.svg"> 
+    </div>
+  </nav>
   <div class="nav-ada">
     <div id="okno1" class="container__nav-ada">
-       <a class="a-ada" href="#">ABOUT</a>
-        <a class="a-ada" href="#">SERVICES</a>
-        <a class="a-ada" href="#">PORTFOLIO</a>
-        <a class="a-ada" href="#">CONTACT</a>
-      </div>
+      <a class="a-ada" href="#section_second">ABOUT</a>
+      <a class="a-ada" href="#section_fourth">SERVICES</a>
+      <a class="a-ada" href="#section_fourth">PORTFOLIO</a>
+      <a class="a-ada" href="#section_fifth">CONTACT</a>
     </div>
-
-
-
-
-
-
-    <body>
-       <div class ='wrapper'>
-         <div class = 'content'>
-           <main class = 'main'>
-             
-          <!--Секция, на которое мы тыкаем, чтобы меню закрылось-->
-            <!-- Первая секция-->
-             <section onclick="onClickOut(this)" class='section_first'>
-               <div class = 'container'>
-                 <div class = 'first_content'>
-                   <div class ='first_text'>
-                    <h3 class ='first_text first_text__blue'>web designer</h3>
-                    <h1 class ='first_text first_text__name'>Stepanischeva Uliana</h1>
-                    <h3 class ='first_text first_text__grey'>Let's create a cool project!</h3>
-                    <div class ='first_contact'>
-                    <button class='first_contact first_contact__con'>CONTACT ME</button>
-                    <button class='first_contact first_contact__CV'>DOWNLOAD  CV</button>
+  </div>
+  <!-- Всплывающие ссылки при нажатии бургер-меню -->
+  <div class ='wrapper'>
+    <div class = 'content'>
+      <main class = 'main'>
+        <!--Секция, на которое мы тыкаем, чтобы меню закрылось-->
+        <!-- Первая секция-->
+        <section id="section_first" onclick="onClickOut(this)" class='section_first'>
+          <div class = 'container'>
+            <div class = 'first_content'>
+              <div class ='first_text'>
+                <h3 class ='first_text first_text__blue'>web designer</h3>
+                <h1 class ='first_text first_text__name'>Stepanischeva Uliana</h1>
+                <h3 class ='first_text first_text__grey'>Let's create a cool project!</h3>
+                <div class ='first_contact'>
+                  <button class='first_contact first_contact__con'>CONTACT ME</button>
+                  <button class='first_contact first_contact__CV'>DOWNLOAD  CV</button>
+                </div>
+              </div>
+            <img class='img_for_first' src='img/1_ph.png'>
+            </div>
+          </div>
+        </section>
+        <section id="section_second" class='section_second' name='ABOUT'>
+          <div class='container'>
+            <div class='second_content'>
+              <div class='second_achiev'>
+                <div class='second_text'>
+                  <h3 class='second_text second_text__ch'>1</h3>
+                  <h3 class='second_text second_text__tx'>year in the <br>profession</h3>
+                </div>
+                <img class='vertical_line' src ='img/line_for_sec.svg'>
+                <div class='second_text'>
+                  <h3 class='second_text second_text__ch'>12</h3>
+                  <h3 class='second_text second_text__tx'>completed <br>projects</h3>
+                </div>
+                <img class='vertical_line' src ='img/line_for_sec.svg'>
+                <div class='second_text'>
+                  <h3 class='second_text second_text__ch'>7</h3>
+                  <h3 class='second_text second_text__tx'>areas of work</h3>
+                </div>
+              </div>
+              <div class='second_contact'>
+                <button class='second_button'>CONTACT ME</button>
+                <div class='telegramm'>
+                  <img class='telegramm' src='img/telegram.svg'>
+                </div>
+                <div class='behance'>
+                  <img class='behance' src="img/behance.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class = 'third_section'>
+          <div class = 'container'>
+            <div class = 'third_content'>
+              <img class = 'horisontal_line' src = 'img/horisontal_line.svg'>
+              <h3 class = 'third_text'>I am engaged in the development of website designs and visual products.<br><br> In my opinion, the site, first of all, should sell the feeling that your buyer will receive. Therefore, I focus on the logic and orderliness of the requests of visitors to the site being created.</h3>
+              <img class = 'horisontal_line' src = 'img/horisontal_line.svg'>
+            </div>
+          </div>
+        </section>
+        <section id="section_fourth" class="section_fourth">
+          <div class='container'>
+            <!-- Это навигация, содержащая переключающие элементы -->
+            <ul class="switch" uk-switcher="active: 1; animation: uk-animation-fade">
+              <li id="servicesID" class="switch__name" >
+                <a class="services" href="#" name='SERVICES'>SERVICES</a>
+              </li>
+              <li id="projectsID" class="switch__name">
+                <a class="projects" href="#" name='PROJECTS'>PROJECTS</a>
+              </li>
+            </ul> 
+            <!-- Это контейнер из элементов содержимого -->
+            <section class="uk-switcher" id="switcher">
+              <div class = 'services_content'>
+                <div class = 'services_items'>
+                  <div class = 'services_item'>
+                    <div class = 'services_item_logo'>
+                      <img src = 'img/icon1.svg'>
+                    </div>
+                    <div class = 'services_item_text'>Website design
+                    </div>
+                    <div class = 'services_item_text services_item_text__content'> An individual website design is created, taking into account the<br>wishes provided and real for layout
                     </div>
                   </div>
-                   <img class = 'img_for_first' src='img/1_ph.png'>
-                 </div>
-               </div>
-             </section>
-             
-          
-
-
-
-             <section class ='section_second' name='ABOUT'>
-               <div class ='container'>
-                 <div class= 'second_content'>
-                   <div class='second_achiev'>
-                     <div class = 'second_text'>
-                       <h3 class = 'second_text second_text__ch'>1</h3>
-                       <h3 class = 'second_text second_text__tx'>year in the <br>profession</h3>
-                     </div>
-                    <img class ='vertical_line' src ='img/line_for_sec.svg'>
-                     <div class = 'second_text'>
-                      <h3 class = 'second_text second_text__ch'>12</h3>
-                      <h3 class = 'second_text second_text__tx'>completed <br>projects</h3>
+                  <div class = 'services_item'>
+                    <div class = 'services_item_logo'>
+                      <img src = 'img/icon1.svg'>
                     </div>
-                    <img class ='vertical_line' src ='img/line_for_sec.svg'>
-                    <div class = 'second_text'>
-                      <h3 class = 'second_text second_text__ch'>7</h3>
-                      <h3 class = 'second_text second_text__tx'>areas of work</h3>
+                    <div class = 'services_item_text'>Website redesign
                     </div>
-
-                   </div>
-                   <div class ='second_contact'>
-                     <button class = 'second_button'>CONTACT ME</button>
-                     <div class = 'telegramm'>
-                        <img class = 'telegramm' src = 'img/telegram.svg'>
-                     </div>
-                     <div class = 'behance'>
-                        <img class = 'behance' src="img/behance.svg">
-                     </div>
-
-                   </div>
-                 </div>
-               </div>
-             </section>
-
-
-             <section class = 'third_section'>
-               <div class = 'container'>
-                 <div class = 'third_content'>
-                        <img class = 'horisontal_line' src = 'img/horisontal_line.svg'>
-                        <h3 class = 'third_text'>I am engaged in the development of website designs and visual products. <br> 
-                          <br> In my opinion, the site, first of all, should sell the feeling that your buyer will receive. Therefore, 
-                          I focus on the logic and orderliness
-                                     of the requests of visitors to the site being created.</h3>
-                        <img class = 'horisontal_line' src = 'img/horisontal_line.svg'>
-               </div>
+                    <div class = 'services_item_text services_item_text__content'>Redesign of the customer's website, taking into account the original<br>palette of the project and modern trends in design
+                    </div>
+                  </div>
+                  <div class = 'services_item'>
+                    <div class = 'services_item_logo'>
+                      <img src = 'img/icon1.svg'>
+                    </div>
+                    <div class = 'services_item_text'>
+                      Website development
+                    </div>
+                    <div class = 'services_item_text services_item_text__content'>Analysis of the target niche and audience, development of the site <br>idea, site design and its subsequent layout using the Tilda<br>constructor or HTML
+                    </div>
+                  </div>
+                  <div class = 'services_item'>
+                    <div class = 'services_item_logo'>
+                      <img src = 'img/icon1.svg'>
+                    </div>
+                    <div class = 'services_item_text'>Posters
+                    </div>
+                    <div class = 'services_item_text services_item_text__content'>Development of posters for printing, interactive posters, <br>presentations</div>
+                  </div> 
+                </div>
               </div>
-             </section>
-
-
-             <section class="section_fourth">
-              <div class='container'>
-                  <!-- Это навигация, содержащая переключающие элементы -->
-                  
-                  <ul class="switch" uk-switcher="active: 1; animation: uk-animation-fade">
-                      <li id="servicesID" class="switch__name" >
-                          <a class="services" href="#" name='SERVICES' style="margin-right: 60px;">SERVICES</a>
-                      </li>
-                      <li id="projectsID" class="switch__name">
-                          <a class="projects" href="#" name='PROJECTS'>PROJECTS</a>
-                      </li>
-                  </ul>
-                  
-                  <!-- Это контейнер из элементов содержимого -->
-                  <ul class="uk-switcher" id="switcher">
-                    <div class = 'services_content'>
-                      <div class = 'services_items'>
-                        <div class = 'services_item'>
-                          <div class = 'services_item_logo'>
-                              <img src = 'img/icon1.svg'>
-                          </div>
-                          <div class = 'services_item_text'>
-                            Website design
-                          </div>
-                          <div class = 'services_item_text services_item_text__content'>
-                            An individual website design is created, taking into account the 
-                            <br>wishes provided and real for layout
-                          </div>
-                        </div>
-                        <div class = 'services_item'>
-                          <div class = 'services_item_logo'>
-                              <img src = 'img/icon1.svg'>
-                          </div>
-                          <div class = 'services_item_text'>
-                            Website redesign
-                          </div>
-                          <div class = 'services_item_text services_item_text__content'>
-                            Redesign of the customer's website, taking into account the original 
-                            <br>palette of the project and modern trends in design
-                          </div>
-                        </div>
-                        <div class = 'services_item'>
-                          <div class = 'services_item_logo'>
-                              <img src = 'img/icon1.svg'>
-                          </div>
-                          <div class = 'services_item_text'>
-                            Website development
-                          </div>
-                          <div class = 'services_item_text services_item_text__content'>
-                            Analysis of the target niche and audience, development of the site <br>
-                            idea, site design and its subsequent layout using the Tilda
-                            <br>constructor or HTML
-                          </div>
-                        </div>
-                        <div class = 'services_item'>
-                          <div class = 'services_item_logo'>
-                              <img src = 'img/icon1.svg'>
-                          </div>
-                          <div class = 'services_item_text'>
-                            Posters
-                          </div>
-                          <div class = 'services_item_text services_item_text__content'>
-                            Development of posters for printing, interactive posters, <br>
-                            presentations
-                          </div>
-                        </div> 
-                      </div>
+              <div class='"projects__content'>
+              <!-- В классе projects__items лежат блоки, которые должны слайдиться => берем его в main.js -->
+                <div class="projects__items">
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p1.png' alt='1'>
                     </div>
-                    <div class='"projects__content'>
-                    <!-- В классе projects__items лежат блоки, которые должны слайдиться => берем его в main.js -->
-                        <div class="projects__items">
-                          
-                          <div class ='hav1'>
-                            <div class='project_item'>
-                              <img class = 'slider_img' src='img/p1.png' alt='1'>
-                            </div>
-                            <div class='project_item'>
-                              <img class = 'slider_img' src='img/p2.png' alt='1'>
-                            </div>
-                          </div>
-                          <div class ='hav1'>
-                            <div class='project_item'>
-                              <img class = 'slider_img' src='img/p3.png' alt='1'>
-                            </div>
-                            <div class='project_item'>
-                              <img class = 'slider_img' src='img/p4.png' alt='1'>
-                            </div>
-                            </div>
-                            <div class ='hav1'>
-                              <div class='project_item'>
-                                <img class = 'slider_img' src='img/p4.png' alt='1'>
-                              </div>
-                              <div class='project_item'>
-                                <img class = 'slider_img' src='img/p4.png' alt='1'>
-                              </div>
-                            </div>
-                            <div class ='hav1'>
-                              <div class='project_item'>
-                                <img class = 'slider_img' src='img/p4.png' alt='1'>
-                              </div>
-                              <div class='project_item'>
-                                <img  class = 'slider_img' src='img/p4.png' alt='1'>
-                              </div>
-                              </div>
-                              <div class ='hav1'>
-                                <div class='project_item'>
-                                  <img class = 'slider_img' src='img/p4.png' alt='1'>
-                                </div>
-                                <div class='project_item'>
-                                  <img class = 'slider_img' src='img/p4.png' alt='1'>
-                                </div>
-                              </div>
-                              <div class ='hav1'>
-                                <div class='project_item'>
-                                  <img class = 'slider_img' src='img/p4.png' alt='1'>
-                                </div>
-                                <div class='project_item'>
-                                  <img class = 'slider_img' src='img/p4.png' alt='1'>
-                                </div>
-                                </div>
-                                
-
-                        
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p2.png' alt='1'>
                     </div>
-
-                    <!-- Стрелки для переключения слайдов 
-                    <div class="arrows">
-                      <span id="arrow__left">
-                          <img src="img/arrowL.svg" alt="2">
-                      </span>
-                      <span id="arrow__right">
-                          <img src="img/arrowR.svg" alt="2">
-                      </span>
-                  </div>-->
+                  </div>
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p3.png' alt='1'>
+                    </div>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                  </div>
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                  </div>
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                    <div class='project_item'>
+                      <img  class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                  </div>
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                  </div>
+                  <div class ='hav1'>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                    <div class='project_item'>
+                      <img class = 'slider_img' src='img/p4.png' alt='1'>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
-
-            <section onclick="onClickOut(this)" class="section_fifth" name = 'CONTACT'>
-              <div class="container">
-                <div class='form_text'>
-                  <h1 class="form_text form_text__title">Feedback form</h1>
-                  <h2 class="form_text form_text__comment">Ask all your questions</h2>
-                  </div>
-                  <form class="form" method="">
-                      <input type="text" class="name" placeholder="Name">
-                      <input type="email" class="email" placeholder="E-mail">
-                      <input type="text" class="notes" placeholder="Notes">
-                      <button id="contact" type="button" class = 'form_bottom' onclick="onClickContact(this)"> CONTSCT ME</button>
-                  </form>
+          </div>
+          <section id="section_fifth" onclick="onClickOut(this)" class="section_fifth" name = 'CONTACT'>
+            <div class="container">
+              <div class='form_text'>
+                <h1 class="form_text form_text__title">Feedback form</h1>
+                <h2 class="form_text form_text__comment">Ask all your questions</h2>
               </div>
+              <form class="form" method="">
+                <input type="text" class="name" placeholder="Name">
+                <input type="email" class="email" placeholder="E-mail">
+                <input type="text" class="notes" placeholder="Notes">
+                <button id="contact" type="button" class = 'form_bottom' onclick="onClickContact(this)"> CONTACT ME</button>
+              </form>
+            </div>
           </section>
 
-           <!-- Спрятанное модальное окно, которые будет появляться при нажатии на кнопку в форме -->
-           <section class="confirm hide" id="confirm">
-            <div class="confirm__content">
-                <div class="confirm__text">
-                    Your application has been submitted<br>
+            <!-- Спрятанное модальное окно, которые будет появляться при нажатии на кнопку в форме -->
+          
+    <div id="okno" class="okno">
+    <div id="d" class="container">
+        <div class="container__okno">
+            <span class="krestik" onclick="onClickKrestik(this)">&times;</span>
+            <hr class="lasthr">
+            <p class="okno__p1">Feedback form</p>
+            <p class="okno__p2">Ask all your questions</p>
+            <p class="okno__p3">Thanks for the feedback!</p>
+            <hr class="underline">
+            <hr>
+        </div>
+    </div>
+</div>
 
-                </div>
-            </div>
-        </section>
-           </main>
-         </div>
-       </div>
+      </main>
+    </div>
+  </div>  
 
-       <!-- Подключение локального js для переключателя -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit-icons.min.js"></script>
-    <!-- Подключение локального js для слайдера -->
-    <script type="text/javascript" src="./slick/slick.js"></script>
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
-    
-    <!-- Подключение файла со скриптами -->
-    <script src="main.js"></script>
-    </body>
+
+
+
+
+  <!-- Подключение Jquery jQuery — это JavaScript Framework-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- Подключение локального js для переключателя -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.3/dist/js/uikit-icons.min.js"></script>
+  <!-- Подключение локального js для слайдера -->
+  <script type="text/javascript" src="./slick/slick.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <!-- Подключение файла со скриптами -->
+  <script src="main.js"></script>
+  </body>
 </html>
